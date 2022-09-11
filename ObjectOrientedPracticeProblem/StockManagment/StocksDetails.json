@@ -1,0 +1,22 @@
+[
+  {
+    "Shares Name": "Alibaba",
+    "Number Of Shares": 30,
+    "Shares Price": 10
+  },
+  {
+    "Shares Name": "Tesla",
+    "Number Of Shares": 30,
+    "Shares Price": 35
+  },
+  {
+    "Shares Name": "Amazom",
+    "Number Of Shares": 30,
+    "Shares Price": 30
+  },
+  {
+    "Shares Name": "Google",
+    "Number Of Shares": 30,
+    "Shares Price": 24
+  }
+]

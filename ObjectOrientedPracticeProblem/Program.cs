@@ -1,5 +1,6 @@
 ﻿using ObjectOrientedPracticeProblem.InventoryDataManagment;
 using ObjectOrientedPracticeProblem.InventoryManagmentSystem;
+using ObjectOrientedPracticeProblem.StockManagment;
 
 namespace ObjectOrientedPracticeProblem
 {
@@ -7,11 +8,12 @@ namespace ObjectOrientedPracticeProblem
     {
         const string INVENTORY_DATA_FILE_PATH = @"E:\Git\GitRepository\ObjectOrientedPracticeProblem\ObjectOrientedPracticeProblem\ObjectOrientedPracticeProblem\InventoryDataManagment\Inventory.json";
         const string DETAILS_DATA_FILE_PATH = @"E:\Git\GitRepository\ObjectOrientedPracticeProblem\ObjectOrientedPracticeProblem\ObjectOrientedPracticeProblem\InventoryManagmentSystem\Details.json";
+        const string STOCK_MANAGEMENT_DATA_PATH = @"E:\Git\GitRepository\ObjectOrientedPracticeProblem\ObjectOrientedPracticeProblem\ObjectOrientedPracticeProblem\StockManagment\StocksDetails.json";
         static void Main(string[] args)
         {
             while (true)
             {
-                Console.WriteLine("Select Programs\n 1.Inventory Data Management \n 2.InventoryManagementSystem");
+                Console.WriteLine("Select Programs\n 1.Inventory Data Management \n 2.Inventory Management System \n 3. Stocks Managment");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -64,6 +66,10 @@ namespace ObjectOrientedPracticeProblem
                                 }
                             }
                         }
+                        break;
+                    case 3:
+                        CreateStocks stock = new CreateStocks();
+                        stock.ReadJsonFile(STOCK_MANAGEMENT_DATA_PATH);
                         break;
                     default:
                         Console.WriteLine("please choose correct options :");
